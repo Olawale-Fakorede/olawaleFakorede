@@ -1,6 +1,10 @@
 
 import React from 'react'
-import { FaTwitter, FaLinkedin, FaFacebook, FaArrowDown } from "react-icons/fa"
+import { FaTwitter, 
+    FaLinkedin, 
+    FaFacebook, 
+    // FaArrowDown 
+} from "react-icons/fa"
 import myImage from "../assets/Group.png" 
 
 const Hero = () => {
@@ -23,12 +27,24 @@ const Hero = () => {
         },
     ];
 
-    window.addEventListener("scroll", function () {
-        const downArrow = document.querySelector(".downArrow");
+    // window.addEventListener("scroll", function () {
+    //     const downArrow = document.querySelector(".downArrow");
         
-        if (this.scrollY >= 90) downArrow.classList.add("hide-down-arrow")
-        else downArrow.classList.remove("hide-down-arrow")
-    });
+    //     if (this.scrollY >= 90) downArrow.classList.add("hide-down-arrow")
+    //     else downArrow.classList.remove("hide-down-arrow")
+    // });
+    
+    // window.addEventListener("scroll", function () {
+    //     const downArrow = document.querySelector(".downArrow");
+        
+    //     if (this.scrollY >= 90) {
+    //       downArrow.setAttribute("class", downArrow.getAttribute("class") + " hide-down-arrow");
+    //     } else {
+    //       downArrow.setAttribute("class", downArrow.getAttribute("class").replace("hide-down-arrow", ""));
+    //     }
+    //   });
+      
+    
     
   return (
     <section className='min-h-screen flex flex-col justify-start items-center p-5 text-center'>
@@ -72,7 +88,7 @@ const Hero = () => {
             
             {/* arrow down animation */}
         <div className='mt-10 down-arrow'>
-            <FaArrowDown className='animate-bounce text-2xl text-gray-400' />
+            {/* <FaArrowDown className='animate-bounce text-2xl text-gray-400' /> */}
         </div>
     </section>
   )
