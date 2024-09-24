@@ -46,10 +46,10 @@ const Tools = () => {
     title='Tools'
     subtitle="Here are some of the tools I make use in completion of projects I developed."
     >
-        <div className='grid grid-cols-3 gap-7 items-center justify-center p-5 shadow-lg dark:shadow-gray-800 rounded-xl space-y-2'>
+        <div className='min-w-screen grid grid-col-2 md:grid md:grid-cols-3 gap-7 items-center justify-center p-5 shadow-lg dark:shadow-gray-800 rounded-xl space-y-2'>
             {myTools.map((tool) => (
                 
-                    <span className="grid items-center gap-3 justify-center p-5 shadow-lg dark:shadow-gray-100 rounded-xl duration-300 ease-in-out hover:scale-110">
+                    <span className="grid items-center gap-3 justify-center p-5 shadow-lg dark:shadow-gray-400 rounded-xl duration-300 ease-in-out hover:scale-110">
                         <img src={tool.image} 
                         alt={tool.id}
                         className="w-16 h-16 md:w-20 md:h-20 object-contain rounded-full"
