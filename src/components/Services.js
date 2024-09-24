@@ -99,7 +99,6 @@ const Services = () => {
     >
         <div className='grid gap-8 lg:grid-cols-3'>
             {service.map((id, siteName, img, demo, githubLink) => (
-                    <div>
                         <div className={`flex flex-col items-center justify-center p-5 shadow-lg dark:shadow-gray-100 rounded-xl duration-300 ease-in-out hover:scale-110 space-y-2 ${id.animation}`}>
                             <img 
                                 src={img} 
@@ -114,7 +113,7 @@ const Services = () => {
                                 className='rounded-md p-1 pr-2 bg-gradient-to-tr from-rose-600 to-teal-500 text-white cursor-pointer flex flex-row gap-2'
                             ><FaGithub className='mt-1 ml-1'/><a href={githubLink} target="_blank" rel="noreferrer">GitHub</a></p>
                         </div>
-                    </div>
+
                 ))
             }
         </div>
