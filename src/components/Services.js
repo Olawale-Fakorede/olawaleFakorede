@@ -11,7 +11,7 @@ const Services = () => {
             id: 1,
             title: "Portfolio",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9hcKUbxsmY5HmX_26-QuaiandcalBf8UDg&s",
-            link: "",
+            link: "https://olawale-fakorede-portfolio.vercel.app/",
             gitHub: "https://github.com/Olawale-Fakorede/olawaleFakorede"
         },
         {
