@@ -1,12 +1,11 @@
 
 import React from 'react'
 import {  
-    FaLinkedin, 
-    FaFacebook, 
     // FaArrowDown 
 } from "react-icons/fa";
-import { FaHandsClapping, FaXTwitter  } from "react-icons/fa6";
+import { FaHandsClapping, FaXTwitter, FaGithub  } from "react-icons/fa6";
 import myImage from "../assets/Group.png" 
+import { SiGmail } from "react-icons/si";
 
 
 const Hero = () => {
@@ -14,18 +13,18 @@ const Hero = () => {
     const mySocial =[
         {
             id: 1,
-            link: "http://www.twitter.com",
+            link: "http://www.twitter.com/Prxfitee",
             icon: <FaXTwitter />
         },
         {
-            id: 2,
-            link: "http://www.facebook.com",
-            icon: <FaFacebook />
+            id: 4,
+            link: "mailto:ayomidefakored58@gmail.com",
+            icon: <SiGmail />
         },
         {
-            id: 3,
-            link: "http://www.linkedin.com",
-            icon: <FaLinkedin />
+            id: 5,
+            link: "https://www.github.com/Olawale-Fakorede",
+            icon: <FaGithub />
         },
     ];
 
