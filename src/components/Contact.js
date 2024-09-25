@@ -24,7 +24,7 @@ const Contact = () => {
         },
         {
             id: 3,
-            link: "http://www.linkedin.com/in/",
+            link: "http://www.linkedin.com/in/olawale-fakorede",
             icon: <FaLinkedin />
         },
         {
@@ -33,8 +33,13 @@ const Contact = () => {
             icon: <SiGmail />
         },
         {
-            id: 4,
-            link: "https://github.com/Olawale-Fakorede",
+            id: 5,
+            link: "https://www.github.com/Olawale-Fakorede",
+            icon: <FaGithub />
+        },
+        {
+            id: 6,
+            link: "https://www.instagram.com/proftee_divspan",
             icon: <FaGithub />
         },
     ];
