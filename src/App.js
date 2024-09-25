@@ -5,6 +5,8 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Tools from "./components/Tools";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
             <Tools/>
             <Skills/>
             <Services />
+            <Contact />
+            <Footer />
         </main>
     </div>
   );

@@ -38,7 +38,22 @@ const Tools = () => {
             id: 6,
             title: "Photoshop",
             image: "https://w7.pngwing.com/pngs/548/34/png-transparent-adobe-photoshop-macos-bigsur-icon-thumbnail.png"
-        }
+        },
+        {
+            id: 7,
+            title: "Postman",
+            image: "https://w7.pngwing.com/pngs/28/245/png-transparent-postman-hd-logo-thumbnail.png"
+        },
+        {
+            id: 8,
+            title: "Windows",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYNiur9uJJHnXquCVaP8yhxjr45TuYBoLUPw&s"
+        },
+        {
+            id: 9,
+            title: "ThurderClient",
+            image: "https://image.pngaaa.com/443/6730443-middle.png"
+        },
     ];
 
   return (

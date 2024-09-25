@@ -57,7 +57,7 @@ const Skills = () => {
         {
             id: 10,
             title: "Bootstrap",
-            image: ""
+            image: "https://e7.pngegg.com/pngimages/439/345/png-clipart-bootstrap-logo-thumbnail-tech-companies.png"
         },
     ];
 
@@ -66,7 +66,7 @@ const Skills = () => {
     title='Skills'
     subtitle="Here are some of the skills I developed myself in."
     >
-        <div className='grid grid-cols-2 gap-7 items-center justify-center p-5 shadow-lg dark:shadow-gray-800 rounded-xl space-y-2'>
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 items-center justify-center p-5 shadow-lg dark:shadow-gray-800 rounded-xl space-y-2'>
             {mySkills.map((tool) => (
                 
                     <span className="grid items-center gap-3 justify-center p-5 shadow-lg dark:shadow-gray-500 rounded-xl duration-300 ease-in-out hover:scale-110">
