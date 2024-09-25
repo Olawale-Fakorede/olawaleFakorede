@@ -1,12 +1,13 @@
 
 import React from 'react'
-import { FaTwitter, 
+import {  
     FaLinkedin, 
     FaFacebook, 
     // FaArrowDown 
 } from "react-icons/fa";
-import { FaHandsClapping } from "react-icons/fa6";
+import { FaHandsClapping, FaXTwitter  } from "react-icons/fa6";
 import myImage from "../assets/Group.png" 
+
 
 const Hero = () => {
 
@@ -14,7 +15,7 @@ const Hero = () => {
         {
             id: 1,
             link: "http://www.twitter.com",
-            icon: <FaTwitter />
+            icon: <FaXTwitter />
         },
         {
             id: 2,
@@ -60,9 +61,9 @@ const Hero = () => {
             I'm Olawale, a passionate and dedicated  developer with a strong background in web development and design interpretation.
             <br/>
             I'm currently looking for opportunities to combine my skills and bring my creativity to life.
-            As a Full-Stack Developer, I specialize in creating the visual and interactive elements of websites and web applications. 
+            Being a Full-Stack Developer, I specialize in creating the visual and interactive elements of websites and web applications. 
             I ensure a seamless and responsive user experience across various devices and browsers by building user interfaces. 
-            I collaborate with designers to implement designs and develop servers, as a backend developers I integrate server-side logic. 
+            I collaborate with designers to implement designs and develop servers, as a backend developer, I integrate server-side logic. 
             My focus is on performance optimization, accessibility, and maintaining clean, efficient code. I have great strength in backend 
             web development. Creating a well structured database server.
         </p>

@@ -1,30 +1,41 @@
 import React from 'react'
 import Section from './common/Section'
-import { FaTwitter, 
+import {  
     FaLinkedin, 
     FaFacebook, 
     // FaArrowDown 
 } from "react-icons/fa";
 // import Githubcalender from './Githubcalender';
-
+import { SiGmail } from "react-icons/si";
+import { FaXTwitter, FaGithub } from "react-icons/fa6";
 
 const Contact = () => {
 
     const mySocial =[
         {
             id: 1,
-            link: "http://www.twitter.com",
-            icon: <FaTwitter />
+            link: "http://www.twitter.com/Prxfitee",
+            icon: <FaXTwitter />
         },
         {
             id: 2,
-            link: "http://www.facebook.com",
+            link: "http://www.facebook.com/olarwalefakorede",
             icon: <FaFacebook />
         },
         {
             id: 3,
-            link: "http://www.linkedin.com",
+            link: "http://www.linkedin.com/in/",
             icon: <FaLinkedin />
+        },
+        {
+            id: 4,
+            link: "mailto:ayomidefakored58@gmail.com",
+            icon: <SiGmail />
+        },
+        {
+            id: 4,
+            link: "https://github.com/Olawale-Fakorede",
+            icon: <FaGithub />
         },
     ];
   return (
