@@ -1,6 +1,7 @@
 import React from 'react'
 import Section from './common/Section'
 import {  
+    FaInstagramSquare,
     FaLinkedin, 
     FaFacebook, 
     // FaArrowDown 
@@ -40,7 +41,7 @@ const Contact = () => {
         {
             id: 6,
             link: "https://www.instagram.com/proftee_divspan",
-            icon: <FaGithub />
+            icon: <FaInstagramSquare />
         },
     ];
   return (
