@@ -4,6 +4,7 @@ import {
     FaInstagramSquare,
     FaLinkedin, 
     FaFacebook, 
+    FaWhatsappSquare,
     // FaArrowDown 
 } from "react-icons/fa";
 // import Githubcalender from './Githubcalender';
@@ -42,6 +43,11 @@ const Contact = () => {
             id: 6,
             link: "https://www.instagram.com/proftee_divspan",
             icon: <FaInstagramSquare />
+        },
+        {
+            id: 7,
+            link: "https://wa.me/08122422728",
+            icon: <FaWhatsappSquare />
         },
     ];
   return (
