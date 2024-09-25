@@ -4,7 +4,8 @@ import { FaTwitter,
     FaLinkedin, 
     FaFacebook, 
     // FaArrowDown 
-} from "react-icons/fa"
+} from "react-icons/fa";
+import { FaHandsClapping } from "react-icons/fa6";
 import myImage from "../assets/Group.png" 
 
 const Hero = () => {
@@ -51,11 +52,19 @@ const Hero = () => {
         <h2 className='text-5xl text-rose-600 font-bold uppercase '>Olawale Fakorede</h2>
         <h3 className='py-3 text-2xl'>Full Stack Web Development</h3>
         <p className='max-w-xl font-light text-gray-500'>
-            Hello <span className='animate-pulse text-2xl text-yellow-500'>!!</span>
+            <span className='animate-pulse text-2xl text-yellow-500 flex items-center justify-center'>
+                <p className='text-white mr-3'>Hello </p>
+                <FaHandsClapping/>
+            </span>
             <br />
             I'm Olawale, a passionate and dedicated  developer with a strong background in web development and design interpretation.
             <br/>
             I'm currently looking for opportunities to combine my skills and bring my creativity to life.
+            As a Full-Stack Developer, I specialize in creating the visual and interactive elements of websites and web applications. 
+            I ensure a seamless and responsive user experience across various devices and browsers by building user interfaces. 
+            I collaborate with designers to implement designs and develop servers, as a backend developers I integrate server-side logic. 
+            My focus is on performance optimization, accessibility, and maintaining clean, efficient code. I have great strength in backend 
+            web development. Creating a well structured database server.
         </p>
 
         {/* social icons */}

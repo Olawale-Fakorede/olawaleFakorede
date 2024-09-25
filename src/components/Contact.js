@@ -5,6 +5,7 @@ import { FaTwitter,
     FaFacebook, 
     // FaArrowDown 
 } from "react-icons/fa";
+// import Githubcalender from './Githubcalender';
 
 
 const Contact = () => {
@@ -54,7 +55,7 @@ const Contact = () => {
 
             {/* Bottom form */}
             <div className='p-8 text-left w-full flex items-center justify-center'>
-                <form action='https://getform.io/f/byvpxlqa' method='POST'>
+                {/* <form action='https://getform.io/f/byvpxlqa' method='POST'>
                     <div className='gap-4 w-full'>
                         <div className='flex flex-col'>
                             <label className='capitalize text-sm py-2 font-extralight'>
@@ -98,7 +99,9 @@ const Contact = () => {
                             send message
                         </button> 
                     </div>
-                </form>
+                </form> */}
+
+               {/* <Githubcalender/> */}
             </div>
         </div>
 
