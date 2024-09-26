@@ -68,7 +68,7 @@ const Contact = () => {
                     Feel free to conatct me using any preffered medium.
                 </p>
             </div>
-            <div className='flex w-full items-center justify-evenly text-3xl'>
+            <div className='grid grid-cols-4 gap-8 w-full items-center justify-evenly text-3xl'>
                 {mySocial.map(({id, link, icon}) => (
                     <a href={link} key={id} target='_blank' rel='noopener noreferrer' className='duration-200 ease-in-out hover:text-rose-600'>
                         {icon}

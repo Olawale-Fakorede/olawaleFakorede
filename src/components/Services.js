@@ -98,11 +98,11 @@ const Services = () => {
                         <div className="flex flex-col gap-1 items-center justify-center p">
                             <img src={tool.image} 
                             alt={tool.id}
-                            className="w-40 h-40 md:w-44 md:h-44 lg:w-60 lg:h-64 object-contain rounded-full"
+                            className="w-40 h-40 md:w-44 md:h-44 lg:w-60 lg:h-60 object-contain rounded-full"
                             />
-                            <h2 className='items-center justify-center text-center -mt-10'>{tool.title}</h2>
+                            <h2 className='items-center justify-center text-center mt-1'>{tool.title}</h2>
                         </div>
-                        <div className="flex flex-col gap-5 md:gap-7 lg:gap-10 items-center justify-center p">
+                        <div className="flex flex-col gap-7 md:gap-9 lg:gap-16 items-center justify-center p">
                             <a href={tool.link} target="_blank" rel="noopener noreferrer"
                                 className='items-center justify-center rounded-lg p-2 bg-gradient-to-tr from-rose-600 to-teal-500 text-white cursor-pointer flex flex-row gap-2'
                             >
