@@ -21,7 +21,7 @@ const Contact = () => {
         },
         {
             id: 2,
-            link: "http://www.facebook.com/olarwalefakorede",
+            link: "http://www.facebook.com/fakorede.olarwale",
             icon: <FaFacebook />
         },
         {

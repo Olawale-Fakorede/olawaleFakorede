@@ -4,7 +4,7 @@ import {
     // FaArrowDown 
 } from "react-icons/fa";
 import { FaHandsClapping, FaXTwitter, FaGithub  } from "react-icons/fa6";
-import myImage from "../assets/Group.png" 
+import myImage from "../assets/Group.jpg" 
 import { SiGmail } from "react-icons/si";
 
 
@@ -59,12 +59,13 @@ const Hero = () => {
             <br />
             I'm Olawale, a passionate and dedicated  developer with a strong background in web development and design interpretation.
             <br/>
-            I'm currently looking for opportunities to combine my skills and bring my creativity to life.
+            I'm open for opportunities to combine my skills and bring my creativity to life.
             Being a Full-Stack Developer, I specialize in creating the visual and interactive elements of websites and web applications. 
             I ensure a seamless and responsive user experience across various devices and browsers by building user interfaces. 
-            I collaborate with designers to implement designs and develop servers, as a backend developer, I integrate server-side logic. 
+            I collaborate with designers to implement designs and develop servers, as a backend developer, 
+            I integrate server-side logic and  I also have a strong ability in debugging. 
             My focus is on performance optimization, accessibility, and maintaining clean, efficient code. I have great strength in backend 
-            web development. Creating a well structured database server.
+            web development. Creating a well structured database server. My upskilling is now into Web 3.0 technologies also.
         </p>
 
         {/* social icons */}
@@ -85,11 +86,11 @@ const Hero = () => {
                 <img 
                 src={myImage} 
                 alt='avatar' 
-                className='w-60 h-60 md:w-72 md:h-72 object-cover object-top bg-gradient-to-b from-rose-600 rounded-xl pt-5'
+                className='w-60 h-64 md:w-72 md:h-72 object-cover object-top bg-gradient-to-b from-rose-600 rounded-xl pt-5'
                 />
                 <a href='/OLAWALE-RESUME.pdf'
                     download={true}
-                    className='flex items-center justify-center mt-10 bg-gradient-to-tr from-rose-600 to-teal-500 text-white py-2 rounded-lg'
+                    className='flex items-center justify-center italic mt-10 bg-gradient-to-tr from-rose-600 to-teal-500 text-white py-2 rounded-lg'
                 >
                     Resume 
                 </a>
