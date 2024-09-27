@@ -53,7 +53,7 @@ const Hero = () => {
         <h3 className='py-3 text-2xl'>Full Stack Web Development</h3>
         <p className='max-w-xl font-light text-gray-500'>
             <span className='flex items-center justify-center'>
-                <p className=' mr-3'>Hello </p>
+                <p className=' mr-3 text-2xl font-semibold'>Hello </p>
                 <FaHandsClapping className='animate-pulse text-2xl text-yellow-500' />
             </span>
             <br />
