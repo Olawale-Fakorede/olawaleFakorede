@@ -49,12 +49,12 @@ const Hero = () => {
     
   return (
     <section className='min-h-screen flex flex-col justify-start items-center p-5 text-center'>
-        <h2 className='text-5xl text-rose-600 font-bold uppercase '>Olawale Fakorede</h2>
+        <h2 className='text-5xl text-rose-600 font-bold uppercase '> Fakorede Olawale Ayomide</h2>
         <h3 className='py-3 text-2xl'>Full Stack Web Development</h3>
         <p className='max-w-xl font-light text-gray-500'>
-            <span className='animate-pulse text-2xl text-yellow-500 flex items-center justify-center'>
-                <p className='text-white mr-3'>Hello </p>
-                <FaHandsClapping/>
+            <span className='flex items-center justify-center'>
+                <p className=' mr-3'>Hello </p>
+                <FaHandsClapping className='animate-pulse text-2xl text-yellow-500' />
             </span>
             <br />
             I'm Olawale, a passionate and dedicated  developer with a strong background in web development and design interpretation.
