@@ -63,7 +63,7 @@ const Skills = () => {
 
   return (
     <Section 
-    title='Skills'
+    title='Technologies'
     subtitle="Here are some of the skills I developed myself in."
     >
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 items-center justify-center p-5 shadow-lg dark:shadow-gray-800 rounded-xl space-y-2'>

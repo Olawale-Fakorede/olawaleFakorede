@@ -94,13 +94,13 @@ const Services = () => {
     >
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 items-center justify-center p-5 shadow-lg dark:shadow-gray-800 rounded-xl space-y-2'>
             {mySkills.map((tool) => (
-                    <span className="flex items-center gap-7 justify-center p-5 shadow-lg dark:shadow-gray-500 rounded-xl duration-300 ease-in-out hover:scale-110">
+                    <span className="flex items-center gap-7 justify-center p-4 shadow-lg dark:shadow-gray-500 rounded-xl duration-300 ease-in-out hover:scale-110">
                         <div className="flex flex-col gap-1 items-center justify-center p">
                             <img src={tool.image} 
                             alt={tool.id}
-                            className="w-40 h-40 md:w-44 md:h-44 lg:w-60 lg:h-60 object-contain rounded-full"
+                            className="w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 object-contain rounded-full"
                             />
-                            <h2 className='items-center justify-center text-center mt-1'>{tool.title}</h2>
+                            <h2 className='items-center justify-center text-center mt-1 italic'>{tool.title}</h2>
                         </div>
                         <div className="flex flex-col gap-7 md:gap-9 lg:gap-16 items-center justify-center p">
                             <a href={tool.link} target="_blank" rel="noopener noreferrer"
