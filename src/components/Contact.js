@@ -1,5 +1,6 @@
-import React from 'react'
-import Section from './common/Section'
+import React, { useState } from 'react';
+import Section from './common/Section';
+import axios from 'axios';
 import {  
     FaInstagramSquare,
     FaLinkedin, 
@@ -50,7 +51,40 @@ const Contact = () => {
             icon: <FaWhatsappSquare />
         },
     ];
-  return (
+  
+    const [valueForm, setValueForm] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+    
+      const handleChange = (e) => {
+        const { name, value} = e.target
+        setValueForm({
+          ...valueForm,
+          [name]: value
+        })
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+      
+        // Assuming valueForm is already defined and contains the data to post
+      
+        try {
+          const response = await axios.post('http://localhost:1996/api/v1/contactme', valueForm);
+      
+          // Handle successful response (e.g., display success message, redirect)
+          console.log('Message successfully sent:', response.data); // Example usage
+        } catch (error) {
+          // Handle errors gracefully (e.g., display error message)
+          console.error('Error Sending Message:', error);
+        }
+      };
+
+
+    return (
     <Section
     title='Contact'
     subtitle="Let's discuss your next project together."
@@ -78,14 +112,18 @@ const Contact = () => {
 
             {/* Bottom form */}
             <div className='p-8 text-left w-full flex items-center justify-center'>
-                {/* <form action='https://getform.io/f/byvpxlqa' method='POST'>
+                <form >
                     <div className='gap-4 w-full'>
                         <div className='flex flex-col'>
                             <label className='capitalize text-sm py-2 font-extralight'>
                                 name
                             </label>
-                            <input type='text' 
-                                name='name' 
+                            <input 
+                                type='text' 
+                                placeholder='Name'
+                                onChange={handleChange}
+                                name='name'
+                                value={valueForm.name}
                                 className='border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white'
                             />
                         </div>
@@ -94,8 +132,12 @@ const Contact = () => {
                             <label className='capitalize text-sm py-2 font-extralight'>
                                 phone
                             </label>
-                            <input type='text' 
-                                name='phone' 
+                            <input 
+                                type="number" 
+                                onChange={handleChange}
+                                name='phone'
+                                value={valueForm.phone} 
+                                placeholder='Phone Number' 
                                 className='border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white'
                             />
                         </div>
@@ -104,8 +146,12 @@ const Contact = () => {
                             <label className='capitalize text-sm py-2 font-extralight'>
                                 email
                             </label>
-                            <input type='text' 
-                                name='email' 
+                            <input 
+                                type="email" 
+                                onChange={handleChange}
+                                name='email'
+                                value={valueForm.email} 
+                                placeholder='Email' 
                                 className='border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white'
                             />
                         </div>
@@ -114,15 +160,19 @@ const Contact = () => {
                             <label className='capitalize text-sm py-2 font-extralight'>
                                 message
                             </label>
-                            <textarea name='message' rows="10" className='border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white resize-none'></textarea>
+                            <textarea name='message' rows="10" className='border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white resize-none'
+                                type="number" 
+                                onChange={handleChange}
+                                value={valueForm.message} 
+                                ></textarea>
                         </div>  
                     </div>
                     <div className='flex item-center justify-center'>
-                        <button type='submit' className='mt-5 bg-gradient-to-tr from-rose-600 to-teal-500 text-white py-3 rounded-md px-6 font-semibold uppercase tracking-wider cursor-pointer hover:scale-105 duration-200'>
+                        <button onSubmit={handleSubmit} className='mt-5 bg-gradient-to-tr from-rose-600 to-teal-500 text-white py-3 rounded-md px-6 font-semibold uppercase tracking-wider cursor-pointer hover:scale-105 duration-200'>
                             send message
                         </button> 
                     </div>
-                </form> */}
+                </form>
 
                {/* <Githubcalender/> */}
             </div>
