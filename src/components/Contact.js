@@ -73,7 +73,7 @@ const Contact = () => {
         // Assuming valueForm is already defined and contains the data to post
       
         try {
-          const response = await axios.post('http://localhost:1996/api/v1/contactme', valueForm);
+          const response = await axios.post('https://server-portfolio-eight.vercel.app/api/v1/contactme', valueForm);
       
           // Handle successful response (e.g., display success message, redirect)
           console.log('Message successfully sent:', response.data); // Example usage
