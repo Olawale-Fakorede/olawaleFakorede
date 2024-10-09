@@ -103,7 +103,7 @@ const Services = () => {
                             <h2 className='items-center justify-center text-center mt-1 italic'>{tool.title}</h2>
                         </div>
                         <div className="flex flex-col gap-7 md:gap-9 lg:gap-16 items-center justify-center p">
-                            <a href={tool.link} target="_blank" rel="noopener noreferrer"
+                            <a href={tool.gitHub} target="_blank" rel="noopener noreferrer"
                                 className='items-center justify-center rounded-lg p-2 bg-gradient-to-tr from-rose-600 to-teal-500 text-white cursor-pointer flex flex-row gap-2'
                             >
                                 <FaGithub size="20" />
