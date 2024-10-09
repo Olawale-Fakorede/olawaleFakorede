@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Typewriter from 'typewriter-effect';
 import {  
     // FaArrowDown 
 } from "react-icons/fa";
@@ -56,11 +57,27 @@ const Hero = () => {
                 <p className=' mr-3 text-2xl font-semibold'>Hello </p>
                 <FaHandsClapping className='animate-pulse text-2xl text-yellow-500' />
             </span>
+            <p className='flex gap-3 justify-center items-center text-center'>I am a  
+                <section className='TypeEffect font-bold text-rose-500 uppercase'>
+                <Typewriter
+                    options={{
+                        strings: ['Full-stack developer', 'Frontend Developer', 'Backend Developer', 'also a Tutor'],
+                        autoStart: true,
+                        loop: true,
+                        delay: 70,
+                        deleteSpeed: 20,
+                        backSpeed: 30,
+                        wrapperClassName: 'typewriter-wrapper'
+                    }}
+                />   
+            </section>
+            </p>
             <br />
             I'm Olawale, a passionate and dedicated  developer with a strong background in web development and design interpretation.
             <br/>
             I'm open for opportunities to combine my skills and bring my creativity to life.
-            Being a Full-Stack Developer, I specialize in creating the visual and interactive elements of websites and web applications. 
+            <br/>
+            I specialize in creating the visual and interactive elements of websites and web applications. 
             I ensure a seamless and responsive user experience across various devices and browsers by building user interfaces. 
             I collaborate with designers to implement designs and develop servers, as a backend developer, 
             I integrate server-side logic and  I also have a strong ability in debugging. 
