@@ -57,8 +57,8 @@ const Hero = () => {
                 <p className=' mr-3 text-2xl font-semibold'>Hello </p>
                 <FaHandsClapping className='animate-pulse text-2xl text-yellow-500' />
             </span>
-            <p className='flex gap-3 justify-center items-center text-center'>I am a  
-                <section className='TypeEffect font-bold text-rose-500 uppercase'>
+            <p className='flex gap-2 justify-center items-center text-center'>I am a  
+                <section className='TypeEffect font-bold text-rose-600 uppercase'>
                 <Typewriter
                     options={{
                         strings: ['Full-stack developer', 'Frontend Developer', 'Backend Developer', 'also a Tutor'],
