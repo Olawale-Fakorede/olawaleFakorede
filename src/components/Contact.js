@@ -11,6 +11,8 @@ import {
 // import Githubcalender from './Githubcalender';
 import { SiGmail } from "react-icons/si";
 import { FaXTwitter, FaGithub } from "react-icons/fa6";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
@@ -82,6 +84,8 @@ const Contact = () => {
           console.error('Error Sending Message:', error);
         }
       };
+
+      const notify = () => toast.success("Message sent succesfully!");
 
 
     return (
@@ -168,8 +172,12 @@ const Contact = () => {
                         </div>  
                     </div>
                     <div className='flex item-center justify-center'>
-                        <button onSubmit={handleSubmit} className='mt-5 bg-gradient-to-tr from-rose-600 to-teal-500 text-white py-3 rounded-md px-6 font-semibold uppercase tracking-wider cursor-pointer hover:scale-105 duration-200'>
+                        <button 
+                            onSubmit={handleSubmit} 
+                            onClick={notify}
+                            className='mt-5 bg-gradient-to-tr from-rose-600 to-teal-500 text-white py-3 rounded-md px-6 font-semibold uppercase tracking-wider cursor-pointer hover:scale-105 duration-200'>
                             send message
+                            <ToastContainer />
                         </button> 
                     </div>
                 </form>
