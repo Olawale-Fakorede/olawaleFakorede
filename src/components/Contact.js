@@ -69,23 +69,36 @@ const Contact = () => {
         })
     };
 
+    const [errorMessage, setErrorMessage] = useState('');
+
     const handleSubmit = async (e) => {
         e.preventDefault();
       
         // Assuming valueForm is already defined and contains the data to post
+
+        const isEmptyField = Object.values(valueForm).some(value => value.trim() === '');
+
+        if (isEmptyField) {
+            setErrorMessage('Please fill in all fields.');
+            return;
+        } else {
+            setErrorMessage(''); // Clear error message if all fields are filled
+        }
       
         try {
           const response = await axios.post('https://server-portfolio-eight.vercel.app/api/v1/contactme', valueForm);
       
           // Handle successful response (e.g., display success message, redirect)
           console.log('Message successfully sent:', response.data); // Example usage
+          toast.success("Message sent successfully!");
+            setValueForm({ name: '', email: '', phone: '', message: '' }); // Clear form after submission
         } catch (error) {
           // Handle errors gracefully (e.g., display error message)
-          console.error('Error Sending Message:', error);
+          setErrorMessage('Error Sending Message:', error);
         }
       };
 
-      const notify = () => toast.success("Message sent succesfully!");
+    //   const notify = () => toast.success("Message sent succesfully!");
 
 
     return (
@@ -116,7 +129,7 @@ const Contact = () => {
 
             {/* Bottom form */}
             <div className='p-8 text-left w-full flex items-center justify-center'>
-                <form >
+                <form onSubmit={handleSubmit}>
                     <div className='gap-4 w-full'>
                         <div className='flex flex-col'>
                             <label className='capitalize text-sm py-2 font-extralight'>
@@ -171,16 +184,19 @@ const Contact = () => {
                                 ></textarea>
                         </div>  
                     </div>
+                    {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
                     <div className='flex item-center justify-center'>
                         <button 
-                            onSubmit={handleSubmit} 
-                            onClick={notify}
+                            // onSubmit={handleSubmit} 
+                            // onClick={notify}
+                            type="submit" // Changed to type="submit"
                             className='mt-5 bg-gradient-to-tr from-rose-600 to-teal-500 text-white py-3 rounded-md px-6 font-semibold uppercase tracking-wider cursor-pointer hover:scale-105 duration-200'>
                             send message
-                            <ToastContainer />
+                          
                         </button> 
                     </div>
                 </form>
+                <ToastContainer />
 
                {/* <Githubcalender/> */}
             </div>
